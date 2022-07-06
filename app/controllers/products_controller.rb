@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
   # how to make a variable available across all controllers? or across all methods and routes within a controller?
+  # UPDATE: seems like you can stick it in a concern folder and allow access across all controllers, but how does that work exactly?
 
   # GET /products or /products.json
   def index
