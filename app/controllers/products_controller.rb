@@ -2,6 +2,8 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
   # how to make a variable available across all controllers? or across all methods and routes within a controller?
   # UPDATE: seems like you can stick it in a concern folder and allow access across all controllers, but how does that work exactly?
+  # belongs_to, how did the command line know to declare them children, also just general misunderstanding of it
+  # how to choose where the button goes in a method or where a method goes
 
   # GET /products or /products.json
   def index
